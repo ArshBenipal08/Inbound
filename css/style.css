@@ -19,6 +19,10 @@ body {
     font-size: 24px;
 }
 
+.fs32 {
+    font-size: 32px;
+}
+
 .fs46 {
     font-size: 46px;
 }
@@ -42,6 +46,10 @@ a:hover {
 
 .back_purple {
     background-color: #C97AEF !important;
+}
+
+.back_purple_trans {
+    background-color: rgba(201, 122, 239, 0.4) !important;
 }
 
 .text_purple {
@@ -145,9 +153,15 @@ header .head-box {
 
 input,
 textarea {
-    border-radius: 10px;
-    border: 1px solid #C97AEF;
-    height: 46px;
+    border-radius: 10px !important;
+    border: 1px solid #C97AEF !important;
+    height: 46px !important;
+}
+
+input[type="checkbox"] {
+    height: 18px !important;
+    width: 18px !important;
+    border-radius: 0px !important;
 }
 
 textarea {
@@ -289,8 +303,120 @@ form button {
     right: 0;
 } */
 
+.login .content {
+    margin-top: 150px;
+}
+
+.login .content .inbox {
+    width: 60%;
+}
+
+.secure .content .inbox {
+    width: 100%;
+}
+
+.secure .content .inn2 {
+    width: 50%;
+}
+
+.secure .outbox1::before,
+.secure .out2::before {
+    display: none;
+}
+
+.login .outbox1::before {
+    position: absolute;
+    content: '';
+    width: 574px;
+    height: 574px;
+    background-image: url(../media/background/rocket2.png);
+    background-size: cover;
+    background-position-x: 0;
+    left: -112px;
+    top: -80px;
+}
+
+.login .out2::before {
+    position: absolute;
+    content: '';
+    width: 534px;
+    height: 534px;
+    background-image: url(../media/background/rocket1.png);
+    background-size: cover;
+    background-position-x: 0;
+    right: -110px;
+    bottom: -120px;
+}
+
+.home .head_l_box {
+    width: 45%;
+    position: absolute;
+    bottom: 50px;
+    left: 250px;
+    /* perspective: 600px; */
+}
+
+.home .style_box_yellow {
+    width: 256px;
+    height: 180px;
+    background-image: url(../media/icons/style_yellow.png);
+    background-position: center center;
+}
+
+.home .style_box_orange {
+    width: 256px;
+    height: 180px;
+    background-image: url(../media/icons/orange.png);
+    background-position: center center;
+}
+
+.home .style_box_blue {
+    width: 256px;
+    height: 180px;
+    background-image: url(../media/icons/blue.png);
+    background-position: center center;
+}
+
+.home .sm2 {
+    transition: all 0.3s;
+    margin-bottom: -20px;
+}
+
+.home .sm2:hover {
+    background-color: #a664c5 !important;
+}
+
+.home .sm2.up {
+    margin-top: -150px !important;
+    /* margin-bottom: 100px !important; */
+}
+
+.home .sm2:hover h3 {
+    color: white !important;
+}
+
+.home .smboxs {
+    margin-top: 150px !important;
+}
+
+.home .cb9 {
+    height: auto;
+}
+
 @media (max-width: 350px) and (min-width: 50px) {
     /* Screen mobile */
+    .login .content {
+        margin-top: 100px;
+    }
+    .login .content .inbox {
+        width: 100%;
+    }
+    .login .outbox1::before {
+        display: none;
+    }
+    .login .out2::before {
+        display: none;
+    }
     .contact .cb4 .back {
         display: none;
     }
@@ -398,6 +524,18 @@ form button {
 
 @media (max-width: 600px) and (min-width: 350px) {
     /* Screen mobile */
+    .login .content {
+        margin-top: 100px;
+    }
+    .login .content .inbox {
+        width: 100%;
+    }
+    .login .outbox1::before {
+        display: none;
+    }
+    .login .out2::before {
+        display: none;
+    }
     .contact .cb4 .back {
         display: none;
     }
@@ -505,6 +643,18 @@ form button {
 
 @media (max-width: 800px) and (min-width: 600px) {
     /* Screen mobile */
+    .login .content {
+        margin-top: 100px;
+    }
+    .login .content .inbox {
+        width: 100%;
+    }
+    .login .outbox1::before {
+        display: none;
+    }
+    .login .out2::before {
+        display: none;
+    }
     .contact .cb4 .back {
         display: none;
     }
@@ -634,6 +784,10 @@ form button {
     .upper_footer {
         margin-right: 10px;
     }
+    .login .outbox1::before {
+        left: -384px;
+        top: -85px;
+    }
 }
 
 
@@ -651,6 +805,10 @@ form button {
         background-position-y: -50px;
         background-position-x: -987px;
         top: -32px;
+    }
+    .login .outbox1::before {
+        left: -284px;
+        top: -85px;
     }
 }
 
@@ -670,6 +828,10 @@ form button {
         background-position-x: -987px;
         top: -32px;
     }
+    .login .outbox1::before {
+        left: -254px;
+        top: -85px;
+    }
 }
 
 
@@ -682,6 +844,10 @@ form button {
     .in2 {
         width: 85%;
         padding: 0 !important;
+    }
+    .login .outbox1::before {
+        left: -254px;
+        top: -85px;
     }
 }
 
@@ -696,6 +862,10 @@ form button {
         width: 80%;
         padding: 0 !important;
     }
+    .login .outbox1::before {
+        left: -204px;
+        top: -85px;
+    }
 }
 
 
@@ -708,9 +878,18 @@ form button {
     .in2 {
         padding: 0 !important;
     }
+    .login .outbox1::before {
+        left: -204px;
+        top: -85px;
+    }
 }
 
 
 /* Screen 90% */
 
-@media (max-width: 1750px) and (min-width: 1600px) {}
+@media (max-width: 1750px) and (min-width: 1600px) {
+    .login .outbox1::before {
+        left: -204px;
+        top: -85px;
+    }
+}
