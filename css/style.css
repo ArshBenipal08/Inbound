@@ -263,6 +263,31 @@ form button {
         /* background-size: contain; */
         background-image: url(../media/background/email_mob_header.png) !important;
     }
+    .about header {
+        background-position: center center;
+        /* background-size: contain; */
+        background-image: url(../media/background/about_mobile.png) !important;
+    }
+    .seo header {
+        background-position: center center;
+        /* background-size: contain; */
+        background-image: url(../media/background/seo_mobile.png) !important;
+    }
+    .ppc header {
+        background-position: center center;
+        /* background-size: contain; */
+        background-image: url(../media/background/ppc_mobile.png) !important;
+    }
+    .uiux header {
+        background-position: center center;
+        /* background-size: contain; */
+        background-image: url(../media/background/ui_mobile.png) !important;
+    }
+    .orm_mob {
+        background-position: center center;
+        /* background-size: contain; */
+        background-image: url(../media/background/orm_mobile.png) !important;
+    }
     header {
         height: 582px;
     }
@@ -337,6 +362,31 @@ form button {
         /* background-size: contain; */
         background-image: url(../media/background/email_mob_header.png) !important;
     }
+    .about header {
+        background-position: center center;
+        /* background-size: contain; */
+        background-image: url(../media/background/about_mobile.png) !important;
+    }
+    .seo header {
+        background-position: center center;
+        /* background-size: contain; */
+        background-image: url(../media/background/seo_mobile.png) !important;
+    }
+    .uiux header {
+        background-position: center center;
+        /* background-size: contain; */
+        background-image: url(../media/background/ui_mobile.png) !important;
+    }
+    .ppc header {
+        background-position: center center;
+        /* background-size: contain; */
+        background-image: url(../media/background/ppc_mobile.png) !important;
+    }
+    .orm_mob {
+        background-position: center center;
+        /* background-size: contain; */
+        background-image: url(../media/background/orm_mobile.png) !important;
+    }
     header {
         height: 582px;
     }
@@ -403,6 +453,7 @@ form button {
     .fsm46 {
         font-size: 46px;
     }
+    
     .fsm32 {
         font-size: 32px;
     }
@@ -410,6 +461,31 @@ form button {
         background-position: center center;
         /* background-size: contain; */
         background-image: url(../media/background/email_mob_header.png) !important;
+    }
+    .about header {
+        background-position: center center;
+        /* background-size: contain; */
+        background-image: url(../media/background/about_mobile.png) !important;
+    }
+    .seo header {
+        background-position: center center;
+        /* background-size: contain; */
+        background-image: url(../media/background/seo_mobile.png) !important;
+    }
+    .ppc header {
+        background-position: center center;
+        /* background-size: contain; */
+        background-image: url(../media/background/ppc_mobile.png) !important;
+    }
+    .uiux header {
+        background-position: center center;
+        /* background-size: contain; */
+        background-image: url(../media/background/ui_mobile.png) !important;
+    }
+    .orm_mob {
+        background-position: center center;
+        /* background-size: contain; */
+        background-image: url(../media/background/orm_mobile.png) !important;
     }
     header {
         height: 582px;
