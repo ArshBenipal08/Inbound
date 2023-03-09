@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 body {
     color: #0E0E0E;
     background-color: #FAFAFA;
@@ -714,7 +713,6 @@ form button {
 
 /* Screen 90% */
 
-=======
 body {
     color: #0E0E0E;
     background-color: #FAFAFA;
@@ -1170,7 +1168,6 @@ form button {
     .fsm46 {
         font-size: 46px;
     }
-    
     .fsm32 {
         font-size: 32px;
     }
@@ -1368,5 +1365,4 @@ form button {
 
 /* Screen 90% */
 
->>>>>>> d25df676423cd9fd99467b9cedab71ec1d44498a
 @media (max-width: 1750px) and (min-width: 1600px) {}
