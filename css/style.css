@@ -1,6 +1,41 @@
+@font-face {
+    font-family: 'AvenirLTStd-Book';
+    src: url('../media/fonts/AvenirLTStd-Book.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AvenirLTStd-Black';
+    src: url('../media/fonts/AvenirLTStd-Black.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AvenirLTStd-Roman';
+    src: url('../media/fonts/AvenirLTStd-Roman.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     color: #0E0E0E;
     background-color: #FAFAFA;
+    font-family: 'AvenirLTStd-Roman';
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'AvenirLTStd-Black';
+}
+
+p {
+    font-family: 'AvenirLTStd-Book';
 }
 
 .fs14 {
@@ -73,6 +108,7 @@ a:hover {
 
 .secondary_text_clr {
     color: #3C3C3C !important;
+    font-family: 'AvenirLTStd-Book';
 }
 
 button {
@@ -513,6 +549,12 @@ form button {
 
 @media (max-width: 350px) and (min-width: 50px) {
     /* Screen mobile */
+    .text_end {
+        text-align: end !important;
+    }
+    .fsm12 {
+        font-size: 12px !important;
+    }
     .login .content {
         margin-top: 100px;
     }
@@ -621,7 +663,7 @@ form button {
         display: none;
     }
     .upper_footer {
-        width: 90%;
+        width: 93%;
     }
     .upper_footer::after,
     .upper_footer::before {
@@ -631,9 +673,13 @@ form button {
         height: 130px;
     }
     .fls.fls3 {
-        height: 100px;
+        height: 75px;
+    }
+    .fls.fls2 {
+        height: 106px;
     }
     .flower {
+        margin-top: 0 !important;
         width: 90%;
     }
     .table {
@@ -643,6 +689,12 @@ form button {
 
 @media (max-width: 600px) and (min-width: 350px) {
     /* Screen mobile */
+    .text_end {
+        text-align: end !important;
+    }
+    .fsm12 {
+        font-size: 12px !important;
+    }
     .login .content {
         margin-top: 100px;
     }
@@ -751,7 +803,7 @@ form button {
         display: none;
     }
     .upper_footer {
-        width: 90%;
+        width: 93%;
     }
     .upper_footer::after,
     .upper_footer::before {
@@ -761,9 +813,13 @@ form button {
         height: 130px;
     }
     .fls.fls3 {
-        height: 100px;
+        height: 75px;
+    }
+    .fls.fls2 {
+        height: 106px;
     }
     .flower {
+        margin-top: 0 !important;
         width: 90%;
     }
     .table {
@@ -773,6 +829,12 @@ form button {
 
 @media (max-width: 800px) and (min-width: 600px) {
     /* Screen mobile */
+    .text_end {
+        text-align: end !important;
+    }
+    .fsm12 {
+        font-size: 12px !important;
+    }
     .login .content {
         margin-top: 100px;
     }
@@ -881,7 +943,7 @@ form button {
         display: none;
     }
     .upper_footer {
-        width: 90%;
+        width: 93%;
     }
     .upper_footer::after,
     .upper_footer::before {
@@ -891,9 +953,13 @@ form button {
         height: 130px;
     }
     .fls.fls3 {
-        height: 100px;
+        height: 75px;
+    }
+    .fls.fls2 {
+        height: 106px;
     }
     .flower {
+        margin-top: 0 !important;
         width: 90%;
     }
     .table {
