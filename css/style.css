@@ -102,6 +102,14 @@ a:hover {
     border-bottom-style: none;
 }
 
+.nn a {
+    color: #0E0E0E;
+}
+
+.nn .dm {
+    width: 291px !important;
+}
+
 .text_purple {
     color: #C97AEF !important;
 }
@@ -238,9 +246,11 @@ header .head-box {
     z-index: 99;
 }
 
+
+/* 
 .owl-carousel .owl-item {
     margin-bottom: 0px !important;
-}
+} */
 
 .slider {
     position: relative;
@@ -269,13 +279,15 @@ header .head-box {
     box-shadow: inset 10px 0 500px rgba(201, 122, 239, 0.1);
 } */
 
+
+/* 
 .owl-carousel .owl-item.cloned {
     opacity: 0.5;
 }
 
 .owl-carousel .owl-item.cloned.active {
     opacity: 1;
-}
+} */
 
 .owl-carousel .owl-nav.disabled {
     display: flex;
@@ -285,7 +297,7 @@ header .head-box {
 }
 
 .owl-carousel .owl-stage-outer {
-    height: 310px;
+    height: auto;
 }
 
 .owl-nav {
@@ -535,6 +547,10 @@ form button {
     /* perspective: 600px; */
 }
 
+.home .innnn.content-box2 {
+    width: 54% !important;
+}
+
 .home .style_box_yellow {
     width: 256px;
     height: 180px;
@@ -563,7 +579,14 @@ form button {
     background-position: center center;
 }
 
-.home.about .style_box_yellow {
+.about .style_box_yellow p,
+.about .style_box_orange p,
+.about .style_box_blue p,
+.about .style_box_purple p {
+    margin-left: 2rem !important;
+}
+
+.about .style_box_yellow {
     width: 392px;
     height: 276px;
     /* background-size: cover; */
@@ -571,25 +594,29 @@ form button {
     background-position: center center;
 }
 
-.home.about .style_box_orange {
+.about .style_box_orange {
     width: 392px;
     height: 276px;
     background-image: url(../media/icons/Group\ 52578.png);
     background-position: center center;
 }
 
-.home.about .style_box_blue {
+.about .style_box_blue {
     width: 392px;
     height: 276px;
     background-image: url(../media/icons/Group\ 52579.png);
     background-position: center center;
 }
 
-.home.about .style_box_purple {
+.about .style_box_purple {
     width: 392px;
     height: 276px;
     background-image: url(../media/icons/Group\ 52579-1.png);
     background-position: center center;
+}
+
+.about .info-box::before {
+    display: none;
 }
 
 .home .sm2 {
@@ -679,6 +706,10 @@ form button {
     width: 57%;
 }
 
+.contact header .head-box {
+    width: 41%;
+}
+
 .pay .content .inbox {
     width: 45% !important;
 }
@@ -691,7 +722,12 @@ form button {
     position: relative;
 }
 
-.secure .in3::before {
+.secure .out2 {
+    position: relative;
+}
+
+.secure .in3::before,
+.secure .occ::after {
     content: '';
     background-image: url(../media/icons/Cube-Yellow-Glossy.png);
     /* background-size: contain; */
@@ -700,7 +736,7 @@ form button {
     height: 91px;
     position: absolute;
     z-index: 99;
-    left: 135%;
+    right: 5%;
     top: -60px;
 }
 
@@ -719,8 +755,163 @@ form button {
     width: 85%;
 }
 
+
+/* slider */
+
+.slider-container {
+    max-width: 100%;
+    width: 100%;
+    /* width: 300px; */
+    /* height: 300px; */
+    margin: 0 auto;
+}
+
+.slick-track {
+    display: flex;
+    justify-content: center;
+}
+
+.slick-slide {
+    /* width: 340px !important; */
+    padding: 20px;
+    /* height: auto; */
+}
+
+.slick-slide .slide-wrap {
+    /* width: 300px !important; */
+    /* height: 500px; */
+    margin: 0 10px;
+    /* box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1); */
+    opacity: 0.5;
+}
+
+.slick-slide .slide-wrap p {
+    padding: 10px;
+    margin: 0;
+}
+
+.slick-slide .image {
+    height: 100px;
+    background: gray;
+}
+
+
+/* .slick-slide */
+
+.slick-cloned .slide-wrap,
+.slick-active .slide-wrap {
+    opacity: 0.5;
+}
+
+.slick-current .slide-wrap {
+    opacity: 1;
+}
+
+.slick-prev.slick-arrow {
+    position: absolute;
+    background-color: transparent;
+    border: 0;
+    bottom: 10px;
+    left: 47%;
+}
+
+.slick-next.slick-arrow {
+    background-color: transparent;
+    border: 0;
+    position: absolute;
+    left: 52%;
+    bottom: 10px;
+}
+
+.navbar {
+    background-color: transparent;
+}
+
+.nn .dm li a {
+    color: #0E0E0E !important;
+}
+
 @media (max-width: 350px) and (min-width: 50px) {
     /* Screen mobile */
+    /* .navbar {
+        background-color: #F4F4F4;
+    } */
+    .navbar-toggler~.navbar {
+        background-color: #F4F4F4 !important;
+    }
+    .navbar .navbar-brand img {
+        width: 94px;
+    }
+    .nn .dm {
+        position: absolute;
+        z-index: 66;
+        background-color: #F4F4F4 !important;
+        width: 100% !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        border: none;
+        text-align: center;
+        line-height: 30px !important;
+    }
+    .nn .dm li {
+        border: none !important;
+        justify-content: center;
+        align-items: center;
+    }
+    .nn .dm li a {
+        text-align: center !important;
+        justify-content: center !important;
+    }
+    .nn .dm li a i {
+        display: none;
+    }
+    #navbarNav {
+        text-align: center;
+        line-height: 60px;
+    }
+    .nn .container,
+    .nn.container-fluid {
+        padding: 0 !important;
+    }
+    .contact .cb4 .info-box {
+        height: auto;
+    }
+    .slick-prev.slick-arrow {
+        position: absolute;
+        background-color: transparent;
+        border: 0;
+        bottom: 10px;
+        left: 35%;
+    }
+    .slick-next.slick-arrow {
+        background-color: transparent;
+        border: 0;
+        position: absolute;
+        left: 60%;
+        bottom: 10px;
+    }
+    .slick-slide {
+        width: 340px !important;
+        padding: 20px;
+        /* height: auto; */
+    }
+    .small-box {
+        width: 300px;
+    }
+    .about .style_box_yellow p,
+    .about .style_box_orange p,
+    .about .style_box_blue p,
+    .about .style_box_purple p {
+        margin-left: 2rem !important;
+        padding: 0 !important;
+    }
+    .bb {
+        background: none !important;
+        background-image: none;
+    }
+    .secure .occ::after {
+        display: none;
+    }
     .contact .cb4 .info-box {
         width: 100%;
         background-color: none !important;
@@ -757,7 +948,7 @@ form button {
         background-color: transparent !important;
     }
     .owl-carousel .owl-item {
-        margin-right: 250px !important;
+        /* margin-right: 100px !important; */
     }
     .text_end {
         text-align: end !important;
@@ -913,8 +1104,8 @@ form button {
     .home .cc {
         background: url(../media/background/home3Mob.png) !important;
         /* background-size: cover !important; */
-        background-position-x: 20px !important;
-        background-repeat: no-repeat;
+        background-position-x: 10px !important;
+        background-repeat: no-repeat !important;
     }
     .home .cc h2 {
         line-height: 50px;
@@ -998,6 +1189,85 @@ form button {
 
 @media (max-width: 600px) and (min-width: 350px) {
     /* Screen mobile */
+    /* .navbar {
+        background-color: #F4F4F4;
+    } */
+    .navbar-toggler~.navbar {
+        background-color: #F4F4F4 !important;
+    }
+    .navbar .navbar-brand img {
+        width: 94px;
+    }
+    .nn .dm {
+        position: absolute;
+        z-index: 66;
+        background-color: #F4F4F4 !important;
+        width: 100% !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        border: none;
+        text-align: center;
+        line-height: 30px !important;
+    }
+    .nn .dm li {
+        border: none !important;
+        justify-content: center;
+        align-items: center;
+    }
+    .nn .dm li a {
+        text-align: center !important;
+        justify-content: center !important;
+    }
+    .nn .dm li a i {
+        display: none;
+    }
+    #navbarNav {
+        text-align: center;
+        line-height: 60px;
+    }
+    .nn .container,
+    .nn.container-fluid {
+        padding: 0 !important;
+    }
+    .contact .cb4 .info-box {
+        height: auto;
+    }
+    .slick-prev.slick-arrow {
+        position: absolute;
+        background-color: transparent;
+        border: 0;
+        bottom: 10px;
+        left: 35%;
+    }
+    .slick-next.slick-arrow {
+        background-color: transparent;
+        border: 0;
+        position: absolute;
+        left: 60%;
+        bottom: 10px;
+    }
+    .slick-slide {
+        width: 340px !important;
+        padding: 20px;
+        /* height: auto; */
+    }
+    .small-box {
+        width: 300px;
+    }
+    .about .style_box_yellow p,
+    .about .style_box_orange p,
+    .about .style_box_blue p,
+    .about .style_box_purple p {
+        margin-left: 2rem !important;
+        padding: 0 !important;
+    }
+    .bb {
+        background: none !important;
+        background-image: none;
+    }
+    .secure .occ::after {
+        display: none;
+    }
     .contact .cb4 .info-box {
         width: 100%;
         background-color: none !important;
@@ -1034,7 +1304,7 @@ form button {
         background-color: transparent !important;
     }
     .owl-carousel .owl-item {
-        margin-right: 250px !important;
+        /* margin-right: 100px !important; */
     }
     .text_end {
         text-align: end !important;
@@ -1190,8 +1460,8 @@ form button {
     .home .cc {
         background: url(../media/background/home3Mob.png) !important;
         /* background-size: cover !important; */
-        background-position-x: 20px !important;
-        background-repeat: no-repeat;
+        background-position-x: 10px !important;
+        background-repeat: no-repeat !important;
     }
     .home .cc h2 {
         line-height: 50px;
@@ -1275,6 +1545,85 @@ form button {
 
 @media (max-width: 800px) and (min-width: 600px) {
     /* Screen mobile */
+    /* .navbar {
+        background-color: #F4F4F4;
+    } */
+    .navbar-toggler~.navbar {
+        background-color: #F4F4F4 !important;
+    }
+    .navbar .navbar-brand img {
+        width: 94px;
+    }
+    .nn .dm {
+        position: absolute;
+        z-index: 66;
+        background-color: #F4F4F4 !important;
+        width: 100% !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        border: none;
+        text-align: center;
+        line-height: 30px !important;
+    }
+    .nn .dm li {
+        border: none !important;
+        justify-content: center;
+        align-items: center;
+    }
+    .nn .dm li a {
+        text-align: center !important;
+        justify-content: center !important;
+    }
+    .nn .dm li a i {
+        display: none;
+    }
+    #navbarNav {
+        text-align: center;
+        line-height: 60px;
+    }
+    .nn .container,
+    .nn.container-fluid {
+        padding: 0 !important;
+    }
+    .contact .cb4 .info-box {
+        height: auto;
+    }
+    .slick-prev.slick-arrow {
+        position: absolute;
+        background-color: transparent;
+        border: 0;
+        bottom: 10px;
+        left: 35%;
+    }
+    .slick-next.slick-arrow {
+        background-color: transparent;
+        border: 0;
+        position: absolute;
+        left: 60%;
+        bottom: 10px;
+    }
+    .slick-slide {
+        width: 340px !important;
+        padding: 20px;
+        /* height: auto; */
+    }
+    .small-box {
+        width: 300px;
+    }
+    .about .style_box_yellow p,
+    .about .style_box_orange p,
+    .about .style_box_blue p,
+    .about .style_box_purple p {
+        margin-left: 2rem !important;
+        padding: 0 !important;
+    }
+    .bb {
+        background: none !important;
+        background-image: none;
+    }
+    .secure .occ::after {
+        display: none;
+    }
     .contact .cb4 .info-box {
         width: 100%;
         background-color: none !important;
@@ -1311,7 +1660,7 @@ form button {
         background-color: transparent !important;
     }
     .owl-carousel .owl-item {
-        margin-right: 250px !important;
+        /* margin-right: 100px !important; */
     }
     .text_end {
         text-align: end !important;
@@ -1467,8 +1816,8 @@ form button {
     .home .cc {
         background: url(../media/background/home3Mob.png) !important;
         /* background-size: cover !important; */
-        background-position-x: 20px !important;
-        background-repeat: no-repeat;
+        background-position-x: 10px !important;
+        background-repeat: no-repeat !important;
     }
     .home .cc h2 {
         line-height: 50px;
@@ -1726,6 +2075,11 @@ form button {
     .home .sm2.up {
         margin-top: 0 !important;
     }
+    .home .smboxs {
+        width: 100% !important;
+        max-width: 100% !important;
+        /* margin-top: 150px !important; */
+    }
 }
 
 
@@ -1815,7 +2169,12 @@ form button {
         left: 10px;
     }
     .home .sm2.up {
-        margin-top: 0 !important;
+        /* margin-top: 0 !important; */
+    }
+    .home .smboxs {
+        width: 100% !important;
+        max-width: 100% !important;
+        /* margin-top: 150px !important; */
     }
 }
 
@@ -1904,7 +2263,12 @@ form button {
         left: 10px;
     }
     .home .sm2.up {
-        margin-top: 0 !important;
+        /* margin-top: 0 !important; */
+    }
+    .home .smboxs {
+        width: 100% !important;
+        max-width: 95% !important;
+        /* margin-top: 150px !important; */
     }
 }
 
@@ -1996,6 +2360,9 @@ form button {
     .home .content.cb3 h2 {
         width: 60% !important;
     }
+    .home .innnn.content-box2 {
+        width: 65% !important;
+    }
 }
 
 
@@ -2084,6 +2451,9 @@ form button {
         left: 50px;
     }
     .home .content.cb3 h2 {
+        width: 60% !important;
+    }
+    .home .innnn.content-box2 {
         width: 60% !important;
     }
 }
